@@ -1,4 +1,4 @@
-
+```markdown
 # Atlas Industrial Supply
 
 A functional front-end for an industrial equipment marketplace. Built for global B2B procurement of heavy machinery components, power transmission parts, and automation gear.
@@ -32,24 +32,10 @@ Plain vanilla everything.
 
 No React. No Tailwind. No npm install. No node_modules black hole.
 
-## Screenshots
-
-### Main Catalog View
-The hero section ditches the typical centered headline. Instead you get a sidebar filter and a product grid right up front.
-
-### Category Cards
-Four industrial sectors with clean iconography. Hover states give a subtle border highlight.
-
-### Trust Bar
-Dark steel background with yellow accent icons. Counters animate from zero when scrolled into view.
-
-### Footer
-Multi-column layout with quick links, contact info across global offices, and social links.
-
 ## Folder Structure
 
 ```
-atlas-industrial-marketplace/
+atlas-industrial/
 ├── index.html
 ├── style.css
 ├── script.js
@@ -66,7 +52,7 @@ That is the whole thing. Three working files.
 
 ```
 git clone https://github.com/Muhammadalimurtadho/atlas-industrial.git
-cd atlas-industrial-marketplace
+cd atlas-industrial
 open index.html
 ```
 
@@ -100,3 +86,6 @@ MIT. Do whatever you want with this code.
 
 Built by hand. Not generated.
 ```
+
+---
+
