@@ -3,310 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas Industrial Supply | Global Equipment Marketplace</title>
+    <title>Coffe — A quiet place for coffee</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header class="site-header" id="navbar">
-        <div class="container header-grid">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-industry"></i>
-                <span>ATLAS <span class="logo-light">INDUSTRIAL</span></span>
-            </a>
-            <nav class="main-nav">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Open daily 7 AM - 9 PM. No loud music, just good coffee.</p>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">coffe<span class="logo-dot">.</span></a>
+            <nav class="nav-menu" id="navMenu">
                 <ul>
-                    <li class="dropdown">
-                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="#">Hydraulics</a>
-                            <a href="#">Pneumatics</a>
-                            <a href="#">Power Transmission</a>
-                            <a href="#">Electrical</a>
-                        </div>
-                    </li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="#space">The Space</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#visit">Visit</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <div class="search-bar" role="search">
-                    <input type="text" placeholder="Search part # or keyword...">
-                    <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                <a href="#" class="btn-icon" aria-label="Account"><i class="fa-solid fa-circle-user"></i></a>
-                <a href="#" class="btn-icon cart-icon" aria-label="Cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="cart-count">3</span>
-                </a>
-                <button class="mobile-menu-toggle" aria-label="Menu">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <main>
-        <section class="catalog-hero">
-            <div class="container hero-layout">
-                <aside class="hero-filters">
-                    <h2>Filter by</h2>
-                    <div class="filter-group">
-                        <h3>Category</h3>
-                        <label><input type="checkbox"> Bearings & Bushings</label>
-                        <label><input type="checkbox"> Motors & Drives</label>
-                        <label><input type="checkbox"> Valves & Fittings</label>
-                        <label><input type="checkbox"> Sensors & Instruments</label>
-                    </div>
-                    <div class="filter-group">
-                        <h3>Certification</h3>
-                        <label><input type="checkbox"> ISO 9001</label>
-                        <label><input type="checkbox"> CE Marked</label>
-                        <label><input type="checkbox"> ANSI Compliant</label>
-                    </div>
-                    <button class="btn btn-primary btn-block">Apply Filters</button>
-                </aside>
-                <div class="hero-grid">
-                    <article class="product-card featured-product">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Industrial gearbox on a workbench">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: AIS-4500-PT</span>
-                            <h3>Helical Geared Motor Unit</h3>
-                            <p class="product-spec">15kW, 3-Phase, 400V, 50Hz, IP55</p>
-                            <div class="product-footer">
-                                <span class="price">$4,870.00</span>
-                                <button class="btn btn-secondary">View Details</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Stainless steel valve close-up">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: VLV-2300-SS</span>
-                            <h3>Pneumatic Ball Valve, 2" NPT</h3>
-                            <p class="product-spec">Double Acting, Stainless Steel 316</p>
-                            <div class="product-footer">
-                                <span class="price">$325.50</span>
-                                <button class="btn btn-secondary">View Details</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Electric motor stator and rotor">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: MTR-1100-IE4</span>
-                            <h3>IE4 Super Premium Motor</h3>
-                            <p class="product-spec">55kW, 1500 RPM, Foot Mounted</p>
-                            <div class="product-footer">
-                                <span class="price">$9,250.00</span>
-                                <button class="btn btn-secondary">View Details</button>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/46168/pexels-photo-46168.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Pressure gauge close up">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: SEN-8800-DP</span>
-                            <h3>Digital Pressure Transmitter</h3>
-                            <p class="product-spec">0-10 bar, 4-20mA Output, G1/4"</p>
-                            <div class="product-footer">
-                                <span class="price">$189.99</span>
-                                <button class="btn btn-secondary">View Details</button>
-                            </div>
-                        </div>
-                    </article>
+        <!-- Section 1: The Space -->
+        <section id="space" class="space-section">
+            <div class="space-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&q=80" alt="Interior kedai kopi dengan cahaya hangat dan tempat duduk kayu" class="space-image">
+                <div class="space-text">
+                    <h2 class="reveal">A corner that asks nothing of you.</h2>
+                    <p class="reveal">Come in, pick a chair, stay as long as you want. The wifi is decent, the coffee is better.</p>
                 </div>
             </div>
         </section>
 
-        <section class="categories">
+        <!-- Section 2: Menu -->
+        <section id="menu" class="menu-section">
             <div class="container">
-                <h2 class="section-title">Shop by Industrial Sector</h2>
-                <div class="category-grid">
-                    <a href="#" class="category-card">
-                        <div class="icon-wrapper"><i class="fa-solid fa-oil-can"></i></div>
-                        <h3>Hydraulics & Lubrication</h3>
-                        <p>Pumps, cylinders, and filtration systems.</p>
-                    </a>
-                    <a href="#" class="category-card">
-                        <div class="icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
-                        <h3>Electrical & Automation</h3>
-                        <p>Drives, PLCs, sensors, and control gear.</p>
-                    </a>
-                    <a href="#" class="category-card">
-                        <div class="icon-wrapper"><i class="fa-solid fa-gears"></i></div>
-                        <h3>Power Transmission</h3>
-                        <p>Bearings, belts, chains, and couplings.</p>
-                    </a>
-                    <a href="#" class="category-card">
-                        <div class="icon-wrapper"><i class="fa-solid fa-wind"></i></div>
-                        <h3>Pneumatics & Vacuum</h3>
-                        <p>Valves, actuators, and air preparation units.</p>
-                    </a>
+                <h2 class="section-title reveal">What we pour</h2>
+                <div class="menu-grid">
+                    <div class="menu-card reveal">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3>Batch Brew</h3>
+                        <p>Our daily filter. Smooth, clean, never bitter. Refills are half price.</p>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                        </div>
+                        <h3>Piccolo Latte</h3>
+                        <p>Small but mighty. Double ristretto with silky milk. The regulars' favorite.</p>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Matcha Latte</h3>
+                        <p>Ceremonial grade, whisked properly. Not the sugary powder stuff.</p>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h3>Cold Brew</h3>
+                        <p>Steeped 18 hours. Served black or with a splash of oat milk.</p>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <h3>Banana Bread</h3>
+                        <p>Baked here every morning. Walnuts, dark chocolate chips, no raisins.</p>
+                    </div>
+                    <div class="menu-card reveal">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-cookie"></i>
+                        </div>
+                        <h3>Sea Salt Cookie</h3>
+                        <p>Chewy center, crispy edge, flaky salt on top. One is never enough.</p>
+                    </div>
+                </div>
+                <p class="menu-note reveal">We also have oat milk, almond milk, and soy milk. Just ask.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: About / Philosophy -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=600&q=80" alt="Barista menuangkan susu ke kopi">
+                </div>
+                <div class="about-text reveal">
+                    <h2>We opened because we were tired.</h2>
+                    <p>Tired of coffee shops that rush you. Tired of places where the music is louder than conversation. Tired of paying too much for a cup that tastes burnt.</p>
+                    <p>So we built Coffe. A small spot with wooden tables, warm lighting, and the smell of fresh grounds. Nothing fancy. Just good coffee and a place to sit with it.</p>
+                    <p class="about-signature">Rama & Dina, founders</p>
                 </div>
             </div>
         </section>
 
-        <section class="featured-products">
+        <!-- Section 4: Stats Counter -->
+        <section class="stats-section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Top Sellers This Month</h2>
-                    <a href="#" class="link-arrow">View all products <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="product-scroll">
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/267557/pexels-photo-267557.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Industrial bearing set">
-                            <span class="badge">Bestseller</span>
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: BRG-9900-DU</span>
-                            <h3>Spherical Roller Bearing, 80mm</h3>
-                            <p class="product-spec">Double Row, C3 Clearance, Steel Cage</p>
-                            <div class="product-footer">
-                                <span class="price">$420.00</span>
-                                <button class="btn btn-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
-                            </div>
-                        </div>
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="12750">0</span>
+                        <span class="stat-label">cups served this year</span>
                     </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/1570393/pexels-photo-1570393.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="VFD drive panel">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: VFD-7700-7.5</span>
-                            <h3>Variable Frequency Drive, 7.5kW</h3>
-                            <p class="product-spec">380-480V, 3-Phase, IP20, Vector Control</p>
-                            <div class="product-footer">
-                                <span class="price">$1,180.00</span>
-                                <button class="btn btn-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
-                            </div>
-                        </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="340">0</span>
+                        <span class="stat-label">regular visitors weekly</span>
                     </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/164504/pexels-photo-164504.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Hydraulic hose crimping">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: HYD-1200-3M</span>
-                            <h3>Hydraulic Hose Assembly, 3m</h3>
-                            <p class="product-spec">1/2" R2AT, 400 Bar WP, with Fittings</p>
-                            <div class="product-footer">
-                                <span class="price">$95.20</span>
-                                <button class="btn btn-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-img">
-                            <img src="https://images.pexels.com/photos/4492135/pexels-photo-4492135.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Safety relay module">
-                        </div>
-                        <div class="product-info">
-                            <span class="product-code">SKU: SAF-3100-RLY</span>
-                            <h3>Safety Relay, Dual Channel</h3>
-                            <p class="product-spec">24V DC, 3 NO + 1 NC, SIL 3 / PL e</p>
-                            <div class="product-footer">
-                                <span class="price">$215.00</span>
-                                <button class="btn btn-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
-                            </div>
-                        </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">years brewing</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="trust-bar">
+        <!-- Section 5: Visit / Footer -->
+        <section id="visit" class="visit-section">
             <div class="container">
-                <div class="trust-grid">
-                    <div class="trust-item">
-                        <i class="fa-solid fa-globe"></i>
-                        <div>
-                            <span class="counter" data-target="42">0</span>
-                            <p>Countries Shipped</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fa-solid fa-clock"></i>
-                        <div>
-                            <span class="counter" data-target="98">0</span><span>%</span>
-                            <p>Same-Day Dispatch Rate</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fa-solid fa-certificate"></i>
-                        <div>
-                            <span class="counter" data-target="15000">0</span><span>+</span>
-                            <p>Products in Stock</p>
-                        </div>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fa-solid fa-headset"></i>
-                        <div>
-                            <span>24/7</span>
-                            <p>Technical Support</p>
-                        </div>
-                    </div>
+                <div class="visit-content reveal">
+                    <h2>Come by</h2>
+                    <p>Jalan Kopi No. 42, Bandung, Indonesia</p>
+                    <p>Every day, 7 AM - 9 PM</p>
+                    <p class="visit-note">No reservations. Just walk in.</p>
+                </div>
+                <div class="social-links reveal">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h4>ATLAS INDUSTRIAL</h4>
-                <p>Your global procurement partner for genuine industrial components. No middlemen, just direct supply.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h4>Products</h4>
-                <ul>
-                    <li><a href="#">Bearings</a></li>
-                    <li><a href="#">Motors & Drives</a></li>
-                    <li><a href="#">Linear Motion</a></li>
-                    <li><a href="#">Tools & Safety</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#">Repair & Overhaul</a></li>
-                    <li><a href="#">Predictive Maintenance</a></li>
-                    <li><a href="#">Energy Audits</a></li>
-                    <li><a href="#">Custom Fabrication</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li>Frankfurt, DE</li>
-                    <li>Houston, US</li>
-                    <li>Singapore, SG</li>
-                    <li><a href="mailto:sales@atlas-industrial.com">sales@atlas-industrial.com</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2024 Atlas Industrial Supply. All rights reserved. ISO 9001:2015 Certified.</p>
-            <div>
-                <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Imprint</a>
-            </div>
+        <div class="container">
+            <p>&copy; 2024 Coffe. Quietly brewing in Bandung.</p>
         </div>
     </footer>
 
